@@ -21,4 +21,4 @@ en vez de mostrar los errores con un alert, Si algún campo presenta error debe 
     </ul>
 </ol>
 
-Mira cómo quedó haciendo click <strong><a href="https://itsandromeda.github.io/Bicis-Locas-II/" target="_blank">aquí</a>.</strong>
+Mira cómo quedó haciendo click <strong><a href="https://itsandromeda.github.io/Bicis-Locas-2/" target="_blank">aquí</a>.</strong>
