@@ -2,8 +2,7 @@
 
 function validateForm() {
     "use strict";
-    var error = "",
-        name = document.getElementById('name'),
+    var name = document.getElementById('name'),
         lastname = document.getElementById('lastname'),
         email = document.getElementById('input-email'),
         password = document.getElementById('input-password'),
