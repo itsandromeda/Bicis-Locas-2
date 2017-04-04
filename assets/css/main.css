@@ -111,12 +111,12 @@ input,
     background-color: #76B700 !important;
     transition-property: background, color;
     transition-duration: .2s;
+    color: white !important;
     border-radius: 0 !important;
     border: none;
     width: 80%;
     margin: auto;
-    margin-bottom: 20px;
-    color: white !important;
+    margin-bottom: 20px;    
     outline: none !important;
 }
 
@@ -129,24 +129,41 @@ input,
 }
 
 .input-box span {
-    display: block;
     background-color: rgba(51, 51, 51, 0.8);
-    padding: 5px;
-    position: absolute;
-    left: 105%;
-    top: 8px;
-    width: 200px;
     color: white;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    left: 95%;
+    top: 2px;
+    width: 200px;
+    animation: fadeEffect 0.3s;
 }
 
 .input-box span:after {
     content: "";
-    width: 0;
-    height: 0;
     border-top: 5px solid transparent;
     border-right: 10px solid rgba(51, 51, 51, 0.8);
     border-bottom: 5px solid transparent;
     position: absolute;
     right: 100%;
-    top: 10px;
+    top: 15px;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

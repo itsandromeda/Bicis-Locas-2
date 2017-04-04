@@ -15,21 +15,32 @@ function validateForm() {
         regEmail = /\S+@\S+\.\S+/;
 
     if (name.value === '' || nameChar !== nameChar.toUpperCase() || regName.test(name.value) === false) {
-        alert('error');
-        name.focus();
-    } else if (lastname.value === '' || lastnameChat !== lastnameChat.toUpperCase() || regName.test(lastname.value) === false) {
-        alert('error');
-        lastname.focus();
-    } else if (email.value === '' || !regEmail.test(email.value)) {
-        alert('error');
-        email.focus();
-    } else if (password.value === '' || password.value.length < 6 || password.value === '123456' || password.value === '098754' || password.value === 'password') {
-        alert('error');
-        password.focus();
-    } else if (dropDown.value === '0') {
-        alert('error');
-        dropDown.focus();
+        document.getElementById('tt-00').style.display = "block";
     } else {
-        form.reset();
+        document.getElementById('tt-00').style.display = "none";
+    }
+
+    if (lastname.value === '' || lastnameChat !== lastnameChat.toUpperCase() || regName.test(lastname.value) === false) {
+        document.getElementById('tt-01').style.display = "block";
+    } else {
+        document.getElementById('tt-01').style.display = "none";
+    }
+
+    if (email.value === '' || !regEmail.test(email.value)) {
+        document.getElementById('tt-02').style.display = "block";
+    } else {
+        document.getElementById('tt-02').style.display = "none";
+    }
+
+    if (password.value === '' || password.value.length < 6 || password.value === '123456' || password.value === '098754' || password.value === 'password') {
+        document.getElementById('tt-03').style.display = "block";
+    } else {
+        document.getElementById('tt-03').style.display = "none";
+    }
+
+    if (dropDown.value === '0') {
+        document.getElementById('tt-04').style.display = "block";
+    } else {
+        document.getElementById('tt-04').style.display = "none";
     }
 }
